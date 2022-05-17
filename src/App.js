@@ -34,13 +34,13 @@ function App() {
       type: type,
     })
     setTimeout(()=>{
-      setAlert(null);},1500);
+      setAlert(null);},1000);
   }
-
+  
   return (
     <>
     {/* <Router> */}
-      <div style={{backgroundColor: mode==='dark'?'#042743':'white'}}>
+      <div style={{backgroundColor: mode==='dark'?'#042743':'white'}}  const componentDidMount= {document.body.style.backgroundColor = mode==='light'?'white':'#042743'}>
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} aboutText="About"/>
         <Alert alert={alert}/>
         <div className="container my-3">
